@@ -1,0 +1,44 @@
+\documentclass[10pt, a4paper, oneside]{ctexart}
+\usepackage{amsmath, amsthm, amssymb, appendix, bm,fancyhdr}
+\usepackage{diagbox, graphicx,geometry, hyperref, lipsum,longtable, mathrsfs,titlesec,textcomp, zhnumber}
+
+\renewcommand{\abstractname}{\Large\textbf{摘要}}
+\renewcommand{\thesection}{\zhnum{section}}
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\newtheorem{theorem}{定理 \arabic{section}.\hspace{-5pt}}
+\newtheorem{definition}{定义 \arabic{section}.\hspace{-5pt}}
+\newtheorem{lemma}{引理 \arabic{section}.\hspace{-5pt}}
+\newtheorem{corollary}{推论 \arabic{section}.\hspace{-5pt}}
+\newtheorem{example}{例 \arabic{section}.\hspace{-5pt}}
+\newtheorem{proposition}{命题 \arabic{section}.\hspace{-5pt}}
+\title{\textbf{这里是题目}}
+\author{张洋， 殷润轩， 邓俊辉}
+\date{\today}
+\linespread{1.5}
+\geometry{left=2.9cm, right=2.9cm, top=3.18cm, bottom=3.18cm}
+\begin{document}
+\maketitle
+\setcounter{page}{0}
+\thispagestyle{empty}
+\begin{abstract}
+	{\fontsize{10}{15}\selectfont\
+        针对问题1，运用几何分析与螺线方程，可以求解龙身前把手与后把手实时位置与时间之间的关系。对于板凳的任意两点，满足以下式子，进而能够求解出问题1.\par
+        针对问题2，考虑板凳相互碰撞的约束条件，将其分为速度大小相反的两种模型。根据实际情况，我们选择了模型2作为参考的模型，并且用MATLAB对其进行模拟，代码运行得出具体的数据，将  带入   中，借助问题1所给出的式子，计算出最终的结果。
+	\textbf{关键词}:
+	\space 螺线 、微分方程 、速度\newpage}
+\end{abstract}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyheadoffset{0cm}
+\fancyfoot[C]{\thepage}
+\newgeometry{left=2.5cm, right=2.5cm, top=3cm, bottom=3cm}
+\section{问题背景与重述}
+本文所研究的问题基于“板凳龙”这一独特的文化活动。“板凳龙”又称“盘龙”，这是一种在浙闽地区流传已久的传统地方民俗文化活动。当地的居民将几十条乃至上百条的板凳首尾相连，形成蜿蜒曲折的“盘龙”，整体呈圆盘状。\par
+本文所研究的问题正是基于这一文化活动给出的具体化数学问题。问题要求我们对一条整体为螺线结构的“盘龙”进行分析，从实际的物理现象中抽离出数学物理模型，建立方程并求解。题目给出了每条板凳的结构与相关数据。\par
+问题1给出了舞龙队行进时的速度、螺线的螺距、龙头的初始位置等多个条件，并要求我们解出0时刻、1分钟、2分钟、3分钟、4分钟以及5分钟时刻多个龙身前把手与后把手的速度与坐标。
+问题2要求我们给出舞龙队行进的终止时间，使得板凳之间不发生碰撞，并给出多个龙身前把手与后把手的速度与坐标。
+
+\end{document}
